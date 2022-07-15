@@ -12,11 +12,11 @@ const department = require('./api/department');
 const information = require('./api/information');
 const project = require('./api/project');
 
-app.use("./api/staff", staff);
-app.use("./api/admin", admin);
-app.use("./api/department", department);
-app.use("./api/information", information);
-app.use("./api/project", project);
+app.use("/api/staff", staff);
+app.use("/api/admin", admin);
+app.use("/api/department", department);
+app.use("/api/information", information);
+app.use("/api/project", project);
 // get driver connection
 const dbo = require("./db/conn");
  
