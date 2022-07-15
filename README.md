@@ -12,4 +12,4 @@ This project was created using the MERN stack: MongoDB, ExpressJs, React, and No
 
 ### `node server.js`
 
-3. Make querys using the frontend website at `http://localhost:3000
+3. Make querys using the frontend website at `http://localhost:3000`
