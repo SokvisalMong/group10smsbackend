@@ -2,21 +2,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
-
-const staff = require('./api/staff');
-const admin = require('./api/admin');
-const department = require('./api/department');
-const information = require('./api/information');
-const project = require('./api/project');
-
-app.use("/api/staff", staff);
-app.use("/api/admin", admin);
-app.use("/api/department", department);
-app.use("/api/information", information);
-app.use("/api/project", project);
+app.use(require("./routes/staff"));
+app.use(require("./routes/admin"));
+app.use(require("./routes/department"));
+app.use(require("./routes/information"));
+app.use(require("./routes/project"));
 // get driver connection
 const dbo = require("./db/conn");
  

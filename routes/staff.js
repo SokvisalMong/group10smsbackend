@@ -3,7 +3,7 @@ const ObjectId = require("mongodb").ObjectId;
 const dbo = require("../db/conn");
 
 // Retrieves a list of all informations
-staffRoutes.route("/").get(function (req, res) {
+staffRoutes.route("/staff").get(function (req, res) {
     let db_connect = dbo.getDb("sms");
     db_connect
         .collection("staffs")
