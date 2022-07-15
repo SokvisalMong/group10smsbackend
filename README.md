@@ -14,7 +14,7 @@ Members:
   
   Pichmonyreadh chau
 
-## Script to start
+## Script to start or send queries to https://g10sms.herokuapp.com/
 
 1. Install all dependencies
 
